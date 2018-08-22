@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <script src="jquery.js"></script>
     <script src="homejs.js"></script>
-    <title>IDM实验室</title>
+  <link rel="stylesheet" type="text/css" href="CSS.css" />
+  <title>IDM实验室</title>
 </head>
 
 <style>  table{margin:0 auto;
@@ -93,14 +94,6 @@
     <td style="text-align:center" onclick="Click(14,4)">4<input type="radio" name="5" value="4" /></td>
     <td style="text-align:center" onclick="Click(14,5)">5<input type="radio" name="5" value="5" /></td>
   </tr>
-  <tr>
-    <td></td>
-    <td ></td>
-    <td ></td>
-    <td ></td>
-    <td ></td>
-    <td id="sub" onclick="Sub()"><button>提交</button></td>
-  </tr>
 </table>
   <table>
     <tr style="text-align:center" class="disease">
@@ -155,7 +148,7 @@
     </tr>
     <tr>
       <td class="symptom">(10) 您眼睛干涩吗？</td>
-      <td style="text-align:center" onclick="Click(2,1)">1<input type="radio" name="2" value="1" id="2"/></td>
+      <td style="text-align:center" onclick="Click(2,1)">1<input type="radio" name="2" value="1" /></td>
       <td style="text-align:center" onclick="Click(2,2)">2<input type="radio" name="2" value="2" /></td>
       <td style="text-align:center" onclick="Click(2,3)">3<input type="radio" name="2" value="3" /></td>
       <td style="text-align:center" onclick="Click(2,4)">4<input type="radio" name="2" value="4" /></td>
@@ -310,6 +303,14 @@
       <td style="text-align:center" onclick="Click(5,3)">3<input type="radio" name="5" value="3" /></td>
       <td style="text-align:center" onclick="Click(5,4)">4<input type="radio" name="5" value="4" /></td>
       <td style="text-align:center" onclick="Click(5,5)">5<input type="radio" name="5" value="5" /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td ></td>
+      <td id="sub" onclick="Sub()" align="center"><a class="button button-tiny">提交</a></td>
     </tr>
   </table>
   </header>
