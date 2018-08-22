@@ -4,11 +4,9 @@ function Click(number1,number2) {
 }
 function Sub() {
   var finish = true;
-  for(var i in data) {
-    if(typeof(data[i]) === undefined)
-    {
-      finish = false;
-    }
+  if(Object.getOwnPropertyNames(data).length !=4)
+  {
+    finish = false;
   }
 if(finish)
 {
@@ -17,8 +15,8 @@ if(finish)
       async:false,
       type:"POST",
       url:"submit",
-      dataType:"json",
-      data:data,
+      dataType: "json",
+      data:JSON.stringify(data),
       success:function () {
         alert("提交成功！");
       },
