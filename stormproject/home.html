@@ -9,7 +9,7 @@
 
 <style>  table{margin:0 auto;
 
-    width: 60%;
+    width: 65%;
     height:200px;}
 
 
@@ -40,64 +40,193 @@
     transition-duration: 500ms; }
   .disease{
     background-color:#bcbcbc;
+    width: 550px;
+  }
+
+  .symptom{
+    width: 550px;
   }
 </style>
 
 <body>
-  <header class="header-area">
-    <div class="main-header-area" id="stickyHeader">
-      <font color="white" size="16">长春市65岁以上老年人中医药健康采集</font></div>
-      <table>
-        <tr style="text-align:center" class="disease">
-          <td>气虚质</td>
-          <td>没有</td>
-          <td>很少</td>
-          <td>有时</td>
-          <td>经常</td>
-          <td>总是</td>
-        </tr>
-        <tr>
-          <td>(2)您容易疲乏吗？</td>
-          <td style="text-align:center" onclick="Click(2,1)">1<input type="radio" name="2" value="1" id="2"/></td>
-          <td style="text-align:center" onclick="Click(2,2)">2<input type="radio" name="2" value="2" /></td>
-          <td style="text-align:center" onclick="Click(2,3)">3<input type="radio" name="2" value="3" /></td>
-          <td style="text-align:center" onclick="Click(2,4)">4<input type="radio" name="2" value="4" /></td>
-          <td style="text-align:center" onclick="Click(2,5)">5<input type="radio" name="2" value="5" /></td>
-        </tr>
-        <tr>
-          <td>(3)您容易气短吗？</td>
-          <td style="text-align:center" onclick="Click(3,1)">1<input type="radio" name="3" value="1" /></td>
-          <td style="text-align:center" onclick="Click(3,2)">2<input type="radio" name="3" value="2" /></td>
-          <td style="text-align:center" onclick="Click(3,3)">3<input type="radio" name="3" value="3" /></td>
-          <td style="text-align:center" onclick="Click(3,4)">4<input type="radio" name="3" value="4" /></td>
-          <td style="text-align:center" onclick="Click(3,5)">5<input type="radio" name="3" value="5" /></td>
-        </tr>
-        <tr>
-          <td>(4)您说话声音低弱无力吗？</td>
-          <td style="text-align:center" onclick="Click(4,1)">1<input type="radio" name="4" value="1" /></td>
-          <td style="text-align:center" onclick="Click(4,2)">2<input type="radio" name="4" value="2" /></td>
-          <td style="text-align:center" onclick="Click(4,3)">3<input type="radio" name="4" value="3" /></td>
-          <td style="text-align:center" onclick="Click(4,4)">4<input type="radio" name="4" value="4" /></td>
-          <td style="text-align:center" onclick="Click(4,5)">5<input type="radio" name="4" value="5" /></td>
-        </tr>
-        <tr>
-          <td>(5)您容易感冒吗？</td>
-          <td style="text-align:center" onclick="Click(5,1)">1<input type="radio" name="5" value="1" /></td>
-          <td style="text-align:center" onclick="Click(5,2)">2<input type="radio" name="5" value="2" /></td>
-          <td style="text-align:center" onclick="Click(5,3)">3<input type="radio" name="5" value="3" /></td>
-          <td style="text-align:center" onclick="Click(5,4)">4<input type="radio" name="5" value="4" /></td>
-          <td style="text-align:center" onclick="Click(5,5)">5<input type="radio" name="5" value="5" /></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td ></td>
-          <td ></td>
-          <td ></td>
-          <td ></td>
-          <td id="sub" onclick="Sub()"><button>提交</button></td>
-        </tr>
-      </table>
-  </header>
+<header class="header-area">
+  <div class="main-header-area" id="stickyHeader">
+    <font color="white" size="16">长春市65岁及以上老年人中医体质采集</font></div>
+<table>
+  <tr style="text-align:center" class="disease">
+    <td>气虚质</td>
+    <td>没有</td>
+    <td>很少</td>
+    <td>有时</td>
+    <td>经常</td>
+    <td>总是</td>
+  </tr>
+  <tr>
+    <td class="symptom">(2)您容易疲乏吗？</td>
+    <td style="text-align:center" onclick="Click(2,1)">1<input type="radio" name="2" value="1" id="2"/></td>
+    <td style="text-align:center" onclick="Click(2,2)">2<input type="radio" name="2" value="2" /></td>
+    <td style="text-align:center" onclick="Click(2,3)">3<input type="radio" name="2" value="3" /></td>
+    <td style="text-align:center" onclick="Click(2,4)">4<input type="radio" name="2" value="4" /></td>
+    <td style="text-align:center" onclick="Click(2,5)">5<input type="radio" name="2" value="5" /></td>
+  </tr>
+  <tr>
+    <td class="symptom">(3)您容易气短吗？</td>
+    <td style="text-align:center" onclick="Click(3,1)">1<input type="radio" name="3" value="1" /></td>
+    <td style="text-align:center" onclick="Click(3,2)">2<input type="radio" name="3" value="2" /></td>
+    <td style="text-align:center" onclick="Click(3,3)">3<input type="radio" name="3" value="3" /></td>
+    <td style="text-align:center" onclick="Click(3,4)">4<input type="radio" name="3" value="4" /></td>
+    <td style="text-align:center" onclick="Click(3,5)">5<input type="radio" name="3" value="5" /></td>
+  </tr>
+  <tr>
+    <td class="symptom">(4)您说话声音低弱无力吗？</td>
+    <td style="text-align:center" onclick="Click(4,1)">1<input type="radio" name="4" value="1" /></td>
+    <td style="text-align:center" onclick="Click(4,2)">2<input type="radio" name="4" value="2" /></td>
+    <td style="text-align:center" onclick="Click(4,3)">3<input type="radio" name="4" value="3" /></td>
+    <td style="text-align:center" onclick="Click(4,4)">4<input type="radio" name="4" value="4" /></td>
+    <td style="text-align:center" onclick="Click(4,5)">5<input type="radio" name="4" value="5" /></td>
+  </tr>
+  <tr>
+    <td class="symptom">(14)您容易感冒吗？</td>
+    <td style="text-align:center" onclick="Click(14,1)">1<input type="radio" name="5" value="1" /></td>
+    <td style="text-align:center" onclick="Click(14,2)">2<input type="radio" name="5" value="2" /></td>
+    <td style="text-align:center" onclick="Click(14,3)">3<input type="radio" name="5" value="3" /></td>
+    <td style="text-align:center" onclick="Click(14,4)">4<input type="radio" name="5" value="4" /></td>
+    <td style="text-align:center" onclick="Click(14,5)">5<input type="radio" name="5" value="5" /></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td ></td>
+    <td id="sub" onclick="Sub()"><button>提交</button></td>
+  </tr>
+</table>
+  <table>
+    <tr style="text-align:center" class="disease">
+      <td>痰湿质</td>
+      <td>没有</td>
+      <td>很少</td>
+      <td>有时</td>
+      <td>经常</td>
+      <td>总是</td>
+    </tr>
+    <tr>
+      <td class="symptom">(09)您感到身体超重不轻松吗？(感觉身体沉重)</td>
+      <td style="text-align:center" onclick="Click(9,1)">1<input type="radio" name="2" value="1" id="2"/></td>
+      <td style="text-align:center" onclick="Click(9,2)">2<input type="radio" name="2" value="2" /></td>
+      <td style="text-align:center" onclick="Click(9,3)">3<input type="radio" name="2" value="3" /></td>
+      <td style="text-align:center" onclick="Click(9,4)">4<input type="radio" name="2" value="4" /></td>
+      <td style="text-align:center" onclick="Click(9,5)">5<input type="radio" name="2" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(16)您有口黏口腻，或睡觉打鼾吗？</td>
+      <td style="text-align:center" onclick="Click(3,1)">1<input type="radio" name="3" value="1" /></td>
+      <td style="text-align:center" onclick="Click(3,2)">2<input type="radio" name="3" value="2" /></td>
+      <td style="text-align:center" onclick="Click(3,3)">3<input type="radio" name="3" value="3" /></td>
+      <td style="text-align:center" onclick="Click(3,4)">4<input type="radio" name="3" value="4" /></td>
+      <td style="text-align:center" onclick="Click(3,5)">5<input type="radio" name="3" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(28)您腹部肥大吗？(指腹部脂肪肥厚)</td>
+      <td style="text-align:center" onclick="Click(28,1)">1<input type="radio" name="4" value="1" /></td>
+      <td style="text-align:center" onclick="Click(28,2)">2<input type="radio" name="4" value="2" /></td>
+      <td style="text-align:center" onclick="Click(28,3)">3<input type="radio" name="4" value="3" /></td>
+      <td style="text-align:center" onclick="Click(28,4)">4<input type="radio" name="4" value="4" /></td>
+      <td style="text-align:center" onclick="Click(28,5)">5<input type="radio" name="4" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(32)您舌苔厚腻或有舌苔厚厚的感觉吗？（如果自我感觉不清楚可由调查员观察后填写）</td>
+      <td style="text-align:center" onclick="Click(32,1)">1<input type="radio" name="5" value="1" /></td>
+      <td style="text-align:center" onclick="Click(32,2)">2<input type="radio" name="5" value="2" /></td>
+      <td style="text-align:center" onclick="Click(32,3)">3<input type="radio" name="5" value="3" /></td>
+      <td style="text-align:center" onclick="Click(32,4)">4<input type="radio" name="5" value="4" /></td>
+      <td style="text-align:center" onclick="Click(32,5)">5<input type="radio" name="5" value="5" /></td>
+    </tr>
+  </table>
+  <table>
+    <tr style="text-align:center" class="disease">
+      <td>湿热质</td>
+      <td>没有</td>
+      <td>很少</td>
+      <td>有时</td>
+      <td>经常</td>
+      <td>总是</td>
+    </tr>
+    <tr>
+      <td class="symptom">(23)您有肢体麻或固定部位疼痛的感觉吗？</td>
+      <td style="text-align:center" onclick="Click(2,1)">1<input type="radio" name="2" value="1" id="2"/></td>
+      <td style="text-align:center" onclick="Click(2,2)">2<input type="radio" name="2" value="2" /></td>
+      <td style="text-align:center" onclick="Click(2,3)">3<input type="radio" name="2" value="3" /></td>
+      <td style="text-align:center" onclick="Click(2,4)">4<input type="radio" name="2" value="4" /></td>
+      <td style="text-align:center" onclick="Click(2,5)">5<input type="radio" name="2" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(25)您有皮肤湿疹，疮疖吗？</td>
+      <td style="text-align:center" onclick="Click(3,1)">1<input type="radio" name="3" value="1" /></td>
+      <td style="text-align:center" onclick="Click(3,2)">2<input type="radio" name="3" value="2" /></td>
+      <td style="text-align:center" onclick="Click(3,3)">3<input type="radio" name="3" value="3" /></td>
+      <td style="text-align:center" onclick="Click(3,4)">4<input type="radio" name="3" value="4" /></td>
+      <td style="text-align:center" onclick="Click(3,5)">5<input type="radio" name="3" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(27)您感到口苦或嘴里有异味吗？（指口苦或口臭）</td>
+      <td style="text-align:center" onclick="Click(4,1)">1<input type="radio" name="4" value="1" /></td>
+      <td style="text-align:center" onclick="Click(4,2)">2<input type="radio" name="4" value="2" /></td>
+      <td style="text-align:center" onclick="Click(4,3)">3<input type="radio" name="4" value="3" /></td>
+      <td style="text-align:center" onclick="Click(4,4)">4<input type="radio" name="4" value="4" /></td>
+      <td style="text-align:center" onclick="Click(4,5)">5<input type="radio" name="4" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(30)您有大便黏滞不爽、解不尽吗？</td>
+      <td style="text-align:center" onclick="Click(5,1)">1<input type="radio" name="5" value="1" /></td>
+      <td style="text-align:center" onclick="Click(5,2)">2<input type="radio" name="5" value="2" /></td>
+      <td style="text-align:center" onclick="Click(5,3)">3<input type="radio" name="5" value="3" /></td>
+      <td style="text-align:center" onclick="Click(5,4)">4<input type="radio" name="5" value="4" /></td>
+      <td style="text-align:center" onclick="Click(5,5)">5<input type="radio" name="5" value="5" /></td>
+    </tr>
+  </table>
+  <table>
+    <tr style="text-align:center" class="disease">
+      <td>血瘀质</td>
+      <td>没有</td>
+      <td>很少</td>
+      <td>有时</td>
+      <td>经常</td>
+      <td>总是</td>
+    </tr>
+    <tr>
+      <td class="symptom">(19)您的皮肤在不知不觉中会出现青紫瘀斑、皮下出血吗？（指皮肤在没有外伤的情况下出现青一块紫一块的情况）</td>
+      <td style="text-align:center" onclick="Click(2,1)">1<input type="radio" name="2" value="1" id="2"/></td>
+      <td style="text-align:center" onclick="Click(2,2)">2<input type="radio" name="2" value="2" /></td>
+      <td style="text-align:center" onclick="Click(2,3)">3<input type="radio" name="2" value="3" /></td>
+      <td style="text-align:center" onclick="Click(2,4)">4<input type="radio" name="2" value="4" /></td>
+      <td style="text-align:center" onclick="Click(2,5)">5<input type="radio" name="2" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(22)您容易气短吗？</td>
+      <td style="text-align:center" onclick="Click(3,1)">1<input type="radio" name="3" value="1" /></td>
+      <td style="text-align:center" onclick="Click(3,2)">2<input type="radio" name="3" value="2" /></td>
+      <td style="text-align:center" onclick="Click(3,3)">3<input type="radio" name="3" value="3" /></td>
+      <td style="text-align:center" onclick="Click(3,4)">4<input type="radio" name="3" value="4" /></td>
+      <td style="text-align:center" onclick="Click(3,5)">5<input type="radio" name="3" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(24)您说话声音低弱无力吗？</td>
+      <td style="text-align:center" onclick="Click(4,1)">1<input type="radio" name="4" value="1" /></td>
+      <td style="text-align:center" onclick="Click(4,2)">2<input type="radio" name="4" value="2" /></td>
+      <td style="text-align:center" onclick="Click(4,3)">3<input type="radio" name="4" value="3" /></td>
+      <td style="text-align:center" onclick="Click(4,4)">4<input type="radio" name="4" value="4" /></td>
+      <td style="text-align:center" onclick="Click(4,5)">5<input type="radio" name="4" value="5" /></td>
+    </tr>
+    <tr>
+      <td class="symptom">(33)您容易感冒吗？</td>
+      <td style="text-align:center" onclick="Click(5,1)">1<input type="radio" name="5" value="1" /></td>
+      <td style="text-align:center" onclick="Click(5,2)">2<input type="radio" name="5" value="2" /></td>
+      <td style="text-align:center" onclick="Click(5,3)">3<input type="radio" name="5" value="3" /></td>
+      <td style="text-align:center" onclick="Click(5,4)">4<input type="radio" name="5" value="4" /></td>
+      <td style="text-align:center" onclick="Click(5,5)">5<input type="radio" name="5" value="5" /></td>
+    </tr>
+  </table>
 </body>
 </html>
-
