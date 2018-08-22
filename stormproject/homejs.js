@@ -1,4 +1,3 @@
-var data;
 data = {weak:0,pant:0,voice:0,fever:0};
 function Click(number1,number2) {
   switch(number1)
@@ -16,7 +15,7 @@ function Click(number1,number2) {
       data.fever = number2;
       break;
   }
-};
+}
 function Sub() {
   var finish = true;
   for(var i in data) {
