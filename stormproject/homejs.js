@@ -1,25 +1,11 @@
-data = {weak:0,pant:0,voice:0,fever:0};
+var data = {};
 function Click(number1,number2) {
-  switch(number1)
-  {
-    case 2:
-      data.weak = number2;
-      break;
-    case 3:
-      data.pant = number2;
-      break;
-    case 4:
-      data.voice = number2;
-      break;
-    case 5:
-      data.fever = number2;
-      break;
-  }
+  data[number1] = number2;
 }
 function Sub() {
   var finish = true;
   for(var i in data) {
-    if(data[i] === 0)
+    if(typeof(data[i]) === undefined)
     {
       finish = false;
     }
