@@ -10,18 +10,26 @@ function Sub() {
   }
 if(finish)
 {
+  var jsondata = function (data) {
+    var objData = {};
+
+    data.forEach((value, key) => objData[key] = value);
+
+    return JSON.stringify(objData);
+  };
   $.ajax(
     {
       async:false,
       type:"POST",
-      url:"submit",
+      url:"http://127.0.0.1:8087/submit",
       dataType: "json",
+      contentType:"text/plain;charset=UTF-8",
       data:JSON.stringify(data),
-      success:function () {
-        alert("提交成功！");
+      success:function (Data) {
+        alert(Data);
       },
-      error:function () {
-        alert("提交失败！");
+      error:function (Data) {
+        console.log(Data);
       }
     }
   );
